@@ -6,22 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/nx9xu/web/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/book_lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/book_lib.xml" afterDir="false" />
+    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="解决找不到jdbc.properties的问题">
+      <change afterPath="$PROJECT_DIR$/src/com/nx9xu/web/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Book-atguigu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Book-atguigu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/JDBCUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/test/JDBCUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/test/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/test/UserServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/utils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nx9xu/utils/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -290,8 +277,16 @@
       <updated>1661169715077</updated>
       <workItem from="1661169716294" duration="13834000" />
       <workItem from="1661184728425" duration="883000" />
-      <workItem from="1661221010156" duration="4197000" />
+      <workItem from="1661221010156" duration="6338000" />
     </task>
+    <task id="LOCAL-00001" summary="解决找不到jdbc.properties的问题">
+      <created>1661227486129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661227486129</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +295,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="307c3bd1-da8f-4607-88b4-b6c3fe0d8b2b">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/IdeaProjects/Book-atguigu/src/com/nx9xu/service" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -307,16 +327,14 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="307c3bd1-da8f-4607-88b4-b6c3fe0d8b2b" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/nx9xu/utils/JDBCUtils.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="解决找不到jdbc.properties的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决找不到jdbc.properties的问题" />
   </component>
 </project>
