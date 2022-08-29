@@ -38,10 +38,24 @@ public class UserServlet extends BaseServlet {
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         } else {
             // 登录 成功
+            req.getSession().setAttribute("user", loginUser.getUsername());
             //跳到成功页面login_success.html
             req.getRequestDispatcher("/pages/user/login_success.jsp").forward(req, resp);
         }
+    }
 
+    /**
+     * 注销
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void logout(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // 销毁包含登录信息的Session
+        req.getSession().invalidate();
+        // 重定向到首页
+        resp.sendRedirect(req.getContextPath());
     }
 
     /**
@@ -54,17 +68,19 @@ public class UserServlet extends BaseServlet {
      */
     protected void regist(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        //  1、获取请求的参数
+        // 1、获取请求的参数
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         String email = req.getParameter("email");
         String code = req.getParameter("code");
+        String token = (String) req.getSession().getAttribute("KAPTCHA_SESSION_KEY"); // 获取Session中的验证码
+        req.getSession().removeAttribute("KAPTCHA_SESSION_KEY"); // 删除Session中的验证码
 
         User user = WebUtils.copyParamToBean(req.getParameterMap(), new User());
 
-//        2、检查 验证码是否正确  === 写死,要求验证码为:abcde
-        if ("abcde".equalsIgnoreCase(code)) {
-//        3、检查 用户名是否可用
+        // 2、检查验证码是否正确
+        if (token != null && token.equalsIgnoreCase(code)) {
+            // 3、检查 用户名是否可用
             if (userService.existsUsername(username)) {
                 System.out.println("用户名[" + username + "]已存在!");
 
@@ -73,7 +89,7 @@ public class UserServlet extends BaseServlet {
                 req.setAttribute("username", username);
                 req.setAttribute("email", email);
 
-//        跳回注册页面
+                // 跳回注册页面
                 req.getRequestDispatcher("/pages/user/regist.jsp").forward(req, resp);
             } else {
                 //      可用

@@ -54,7 +54,6 @@ public class BookServiceImpl implements BookService {
         }
         // 设置总页码
         page.setPageTotal(pageTotal);
-
         // 设置当前页码
         page.setPageNo(pageNo);
 

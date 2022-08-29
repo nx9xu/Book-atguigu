@@ -6,60 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="更新图书管理模块">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/BookDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/BookDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/BookDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/BookServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/JdbcUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/UserServletTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/utils/JdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/utils/WebUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/BookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/ClientBookServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/client/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/common/page_nav.jsp" afterDir="false" />
+    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="更新分页模块">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/kaptcha-2.3.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/book_lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/book_lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/BookDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/BaseDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/BookDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/service/impl/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/BookDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/BookServiceImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/JDBCUtilsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/UserDaoTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/UserServiceImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/test/UserServletTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/utils/JDBCUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/utils/WebUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/web/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/BaseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/web/BookServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/web/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/web/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nx9xu/web/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/RegistServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/common/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/common/manager_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/common/manager_menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/manager/book_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/manager/book_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/manager/book_manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/manager/book_manager.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/client/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/common/login_success_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/common/login_success_menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/user/login_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/user/login_success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/user/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/user/regist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/user/regist_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/user/regist_success.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +64,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "D:/IdeaProjects/Book-atguigu/web",
+    "last_opened_file_path": "D:/IdeaProjects/Book-atguigu/web/WEB-INF/lib/kaptcha-2.3.2.jar",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.2",
@@ -113,11 +73,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Book-atguigu\web\WEB-INF\lib" />
       <recent name="D:\IdeaProjects\Book-atguigu\web" />
       <recent name="D:\IdeaProjects\Book-atguigu\web\WEB-INF" />
       <recent name="D:\IdeaProjects\Book-atguigu" />
       <recent name="D:\IdeaProjects\Book-atguigu\web\pages\common" />
-      <recent name="D:\IdeaProjects\Book-atguigu\web\pages\manager" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -330,7 +290,9 @@
       <workItem from="1661306317324" duration="3736000" />
       <workItem from="1661314268708" duration="20470000" />
       <workItem from="1661395936363" duration="12894000" />
-      <workItem from="1661415020519" duration="3443000" />
+      <workItem from="1661415020519" duration="5782000" />
+      <workItem from="1661564962589" duration="8422000" />
+      <workItem from="1661738528719" duration="7223000" />
     </task>
     <task id="LOCAL-00001" summary="解决找不到jdbc.properties的问题">
       <created>1661227486129</created>
@@ -353,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661405832952</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新分页模块">
+      <created>1661419364245</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661419364245</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,6 +373,18 @@
     <MESSAGE value="解决找不到jdbc.properties的问题" />
     <MESSAGE value="update LoginServlet.java" />
     <MESSAGE value="更新图书管理模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新图书管理模块" />
+    <MESSAGE value="更新分页模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新分页模块" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/atguigu/web/ClientBookServlet.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

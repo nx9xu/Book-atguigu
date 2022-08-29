@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@Deprecated
 public class RegistServlet extends HttpServlet {
 
     private UserService userService = new UserServiceImpl();
