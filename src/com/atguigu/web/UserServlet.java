@@ -37,8 +37,8 @@ public class UserServlet extends BaseServlet {
             //   跳回登录页面
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         } else {
-            // 登录 成功
-            req.getSession().setAttribute("user", loginUser.getUsername());
+            // 登录成功，将用户名设置在session域中
+            req.getSession().setAttribute("user", loginUser);
             //跳到成功页面login_success.html
             req.getRequestDispatcher("/pages/user/login_success.jsp").forward(req, resp);
         }

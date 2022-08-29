@@ -6,15 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="更新注册页面的随机验证码功能（使用谷歌验证码）">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/CartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/CartServlet.java" afterDir="false" />
+    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="更新购物车模块">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/OrderItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/OrderDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/OrderItemDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/OrderDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/OrderItemDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/OrderServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/cart/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/cart/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/cart/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/cart/checkout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/client/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/common/login_success_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/common/login_success_menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,39 +96,7 @@
       <recent name="com.nx9xu.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartTest.updateCount">
-    <configuration name="BookServiceImplTest.queryBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Book-atguigu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nx9xu.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nx9xu.test" />
-      <option name="MAIN_CLASS_NAME" value="com.nx9xu.test.BookServiceImplTest" />
-      <option name="METHOD_NAME" value="queryBooks" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTest.addItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Book-atguigu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.test" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.test.CartTest" />
-      <option name="METHOD_NAME" value="addItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.book">
     <configuration name="CartTest.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Book-atguigu" />
       <extension name="coverage">
@@ -135,22 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartTest.deleteItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Book-atguigu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.atguigu.test" />
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.test.CartTest" />
-      <option name="METHOD_NAME" value="deleteItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CartTest.updateCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Book-atguigu" />
       <extension name="coverage">
@@ -162,6 +124,54 @@
       <option name="PACKAGE_NAME" value="com.atguigu.test" />
       <option name="MAIN_CLASS_NAME" value="com.atguigu.test.CartTest" />
       <option name="METHOD_NAME" value="updateCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDaoTest.saveOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Book-atguigu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.test.OrderDaoTest" />
+      <option name="METHOD_NAME" value="saveOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderItemDaoTest.saveOrderItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Book-atguigu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.test.OrderItemDaoTest" />
+      <option name="METHOD_NAME" value="saveOrderItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest.createOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Book-atguigu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.test" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.test.OrderServiceTest" />
+      <option name="METHOD_NAME" value="createOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -258,20 +268,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CartTest.addItem" />
       <item itemvalue="JUnit.CartTest.clear" />
-      <item itemvalue="JUnit.CartTest.deleteItem" />
       <item itemvalue="JUnit.CartTest.updateCount" />
-      <item itemvalue="JUnit.BookServiceImplTest.queryBooks" />
+      <item itemvalue="JUnit.OrderDaoTest.saveOrder" />
+      <item itemvalue="JUnit.OrderItemDaoTest.saveOrderItem" />
+      <item itemvalue="JUnit.OrderServiceTest.createOrder" />
       <item itemvalue="Tomcat Server.book" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceTest.createOrder" />
+        <item itemvalue="JUnit.OrderItemDaoTest.saveOrderItem" />
+        <item itemvalue="JUnit.OrderDaoTest.saveOrder" />
         <item itemvalue="JUnit.CartTest.updateCount" />
         <item itemvalue="JUnit.CartTest.clear" />
-        <item itemvalue="JUnit.CartTest.addItem" />
-        <item itemvalue="JUnit.CartTest.deleteItem" />
-        <item itemvalue="JUnit.BookServiceImplTest.queryBooks" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +301,7 @@
       <workItem from="1661395936363" duration="12894000" />
       <workItem from="1661415020519" duration="5782000" />
       <workItem from="1661564962589" duration="8422000" />
-      <workItem from="1661738528719" duration="16474000" />
+      <workItem from="1661738528719" duration="22225000" />
     </task>
     <task id="LOCAL-00001" summary="解决找不到jdbc.properties的问题">
       <created>1661227486129</created>
@@ -328,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661757436167</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新购物车模块">
+      <created>1661771176606</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661771176606</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +398,8 @@
     <MESSAGE value="更新图书管理模块" />
     <MESSAGE value="更新分页模块" />
     <MESSAGE value="更新注册页面的随机验证码功能（使用谷歌验证码）" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新注册页面的随机验证码功能（使用谷歌验证码）" />
+    <MESSAGE value="更新购物车模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新购物车模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
