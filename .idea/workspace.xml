@@ -6,25 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="更新购物车模块">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/OrderItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/OrderDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/OrderItemDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/pojo/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/OrderDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/OrderItemDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/test/OrderServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/web/OrderServlet.java" afterDir="false" />
+    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="更新创建订单模块">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/filter/ManagerFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/cart/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/cart/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/client/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pages/common/login_success_menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/common/login_success_menu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +45,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "D:/IdeaProjects/Book-atguigu/web/pages/cart",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/Book-atguigu/web/pages/cart&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\Book-atguigu\web\pages\cart" />
@@ -301,7 +286,8 @@
       <workItem from="1661395936363" duration="12894000" />
       <workItem from="1661415020519" duration="5782000" />
       <workItem from="1661564962589" duration="8422000" />
-      <workItem from="1661738528719" duration="22225000" />
+      <workItem from="1661738528719" duration="22366000" />
+      <workItem from="1661831953040" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="解决找不到jdbc.properties的问题">
       <created>1661227486129</created>
@@ -345,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661771176606</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新创建订单模块">
+      <created>1661789532062</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661789532062</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +392,8 @@
     <MESSAGE value="更新分页模块" />
     <MESSAGE value="更新注册页面的随机验证码功能（使用谷歌验证码）" />
     <MESSAGE value="更新购物车模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新购物车模块" />
+    <MESSAGE value="更新创建订单模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新创建订单模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
