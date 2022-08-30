@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
 
         Order order = new Order(orderId, new Date(), cart.getTotalPrice(), 0, userId);
         orderDao.saveOrder(order);
-
+        int i = 12 / 0;
         for (CartItem cartItem : cart.getItems().values()) {
             OrderItem orderItem = new OrderItem(null, cartItem.getName(), cartItem.getCount(), cartItem.getPrice(), cartItem.getTotalPrice(), orderId);
             // 保存订单项到数据库

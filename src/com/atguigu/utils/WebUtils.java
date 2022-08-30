@@ -19,7 +19,7 @@ public class WebUtils {
             BeanUtils.populate(bean, value);
             System.out.println("注入之后：" + bean);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
         return bean;
     }
@@ -34,7 +34,7 @@ public class WebUtils {
         try {
             return Integer.parseInt(strInt);
         } catch (Exception e) {
-//            e.printStackTrace();
+//            throw new RuntimeException(e);
         }
         return defaultValue;
     }

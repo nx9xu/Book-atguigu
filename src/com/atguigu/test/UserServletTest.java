@@ -33,7 +33,7 @@ public class UserServletTest {
             method.invoke(new UserServletTest() );
 
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
 
 
