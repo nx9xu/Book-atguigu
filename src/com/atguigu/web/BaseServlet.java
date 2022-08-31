@@ -19,6 +19,9 @@ public abstract class BaseServlet extends HttpServlet {
         // 一定要在获取请求参数之前调用才有效
         req.setCharacterEncoding("UTF-8");
 
+        // 解决响应的中文乱码问题
+        resp.setContentType("text/html; charset=UTF-8");
+
         String action = req.getParameter("action");
         try {
             // 获取action业务鉴别字符串，获取相应的业务 方法反射对象

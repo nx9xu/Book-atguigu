@@ -6,20 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="添加后台权限管理功能">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/filter/TransactionFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/error/error404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/pages/error/error500.jsp" afterDir="false" />
+    <list default="true" id="7e84d577-b8c7-4c2e-8698-98e0f6b8ab68" name="Changes" comment="添加TransactionFilter统一管理事务">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.2.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/book_lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/book_lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/dao/impl/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/dao/impl/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/test/JdbcUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/test/JdbcUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/test/UserServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/test/UserServletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/utils/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/utils/JdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/utils/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/utils/WebUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/BaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/BaseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/OrderServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/web/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/client/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/client/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pages/user/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/pages/user/regist.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +59,8 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "D:/IdeaProjects/Book-atguigu/web/pages",
-    "project.structure.last.edited": "Problems",
+    "last_opened_file_path": "D:/IdeaProjects/Book-atguigu/web/WEB-INF/lib/gson-2.2.4.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -73,9 +68,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Book-atguigu\web\WEB-INF\lib" />
       <recent name="D:\IdeaProjects\Book-atguigu\web\pages" />
       <recent name="D:\IdeaProjects\Book-atguigu\web\pages\cart" />
-      <recent name="D:\IdeaProjects\Book-atguigu\web\WEB-INF\lib" />
       <recent name="D:\IdeaProjects\Book-atguigu\web" />
       <recent name="D:\IdeaProjects\Book-atguigu\web\WEB-INF" />
     </key>
@@ -297,7 +292,8 @@
       <workItem from="1661415020519" duration="5782000" />
       <workItem from="1661564962589" duration="8422000" />
       <workItem from="1661738528719" duration="22366000" />
-      <workItem from="1661831953040" duration="6322000" />
+      <workItem from="1661831953040" duration="7375000" />
+      <workItem from="1661908590226" duration="3282000" />
     </task>
     <task id="LOCAL-00001" summary="解决找不到jdbc.properties的问题">
       <created>1661227486129</created>
@@ -355,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661832653148</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加TransactionFilter统一管理事务">
+      <created>1661843197019</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661843197019</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +414,7 @@
     <MESSAGE value="更新购物车模块" />
     <MESSAGE value="更新创建订单模块" />
     <MESSAGE value="添加后台权限管理功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加后台权限管理功能" />
+    <MESSAGE value="添加TransactionFilter统一管理事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加TransactionFilter统一管理事务" />
   </component>
 </project>

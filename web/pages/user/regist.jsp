@@ -12,10 +12,22 @@
 		<script type="text/javascript">
 			// 页面加载完成之后
 			$(function () {
+				$("#username").change(function () {
+					var username = this.value;
+
+					$.getJSON("userServlet","action=ajaxExistsUsername&username=" + username,function (data) {
+						if (data.existsUsername) {
+							$("span.errorMsg").text("用户名已存在！");
+						} else {
+							$("span.errorMsg").text("用户名可用！");
+						}
+					});
+				});
+
 				// 给验证码图片绑定单击事件
 				$("#code_img").click(function () {
 					this.src = "${basePath}kaptchaServlet.jpg?d=" + new Date(); // 加时间戳可以跳过浏览器缓存，以此达到每次刷新都得到不同的图片
-				})
+				});
 
 				// 给注册绑定单击事件
 				$("#sub_btn").click(function () {
